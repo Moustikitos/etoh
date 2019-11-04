@@ -9,5 +9,6 @@ bash <(curl -s https://raw.githubusercontent.com/Moustikitos/etoh/master/bash/ze
 ## launch server
 
 ```bash
+cd ~/etoh
 pm2 srv.json
 ```
