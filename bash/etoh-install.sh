@@ -12,6 +12,7 @@ echo "github branch to use : $B"
 echo
 echo installing system dependencies
 echo ==============================
+sudo apt-get -qq install git
 sudo apt-get -qq install curl
 sudo apt-get -qq install python python-dev
 sudo apt-get -qq install python-setuptools
