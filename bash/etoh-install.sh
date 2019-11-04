@@ -13,7 +13,6 @@ echo
 echo installing system dependencies
 echo ==============================
 sudo apt-get -qq install git
-sudo apt-get -qq install pm2
 sudo apt-get -qq install curl
 sudo apt-get -qq install python python-dev
 sudo apt-get -qq install python-setuptools
@@ -21,7 +20,16 @@ sudo apt-get -qq install python-pip
 sudo apt-get -qq install virtualenv
 sudo apt-get -qq install nginx
 sudo apt-get -qq install libudev-dev libusb-1.0.0-dev
+echo "done"
 
+echo
+echo installing nodejd
+echo =================
+cd /tmp
+wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
+tar xvf node-v0.10.32-linux-x64.tar.gz
+cd node-v0.10.32-linux-x64/
+cp * /usr/local/ -r
 echo "done"
 
 # download etoh package
